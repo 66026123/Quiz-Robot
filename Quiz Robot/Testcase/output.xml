@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.9 on win32)" generated="2025-02-11T10:09:26.796981" rpa="false" schemaversion="5">
+<suite id="s1" name="Q20.1" source="C:\Users\Topviewpoint\Downloads\Quiz Robot\Testcase\Q20.1.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-02-11T10:09:27.094958" level="INFO">Opening browser 'firefox' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T10:09:27.094958" elapsed="92.009872"/>
+</kw>
+<test id="s1-t1" name="Search Products and Verify Cart After Login" line="49">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T10:10:59.107365" elapsed="5.070418"/>
+</kw>
+<kw name="Click Products Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:11:04.180214" level="INFO">Clicking element '//a[contains(text(),'Products')]'.</msg>
+<arg>//a[contains(text(),'Products')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T10:11:04.179225" elapsed="6.395973"/>
+</kw>
+<status status="PASS" start="2025-02-11T10:11:04.179225" elapsed="6.395973"/>
+</kw>
+<kw name="Verify Navigation To All Products Page">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-02-11T10:11:15.698110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-11T10:11:15.698110" level="FAIL">Text 'ALL PRODUCTS' did not appear in 5 seconds.</msg>
+<arg>ALL PRODUCTS</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-02-11T10:11:10.577677" elapsed="5.127276">Text 'ALL PRODUCTS' did not appear in 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-02-11T10:11:10.576663" elapsed="5.128290">Text 'ALL PRODUCTS' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Search For Product">
+<arg>${SEARCH_TERM}</arg>
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button">
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Search Results">
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Add Products To Cart">
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Products In Cart">
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Login To Account">
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Products In Cart After Login">
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-02-11T10:11:15.704953" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-11T10:10:59.104830" elapsed="16.600123">Text 'ALL PRODUCTS' did not appear in 5 seconds.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-11T10:11:15.712679" elapsed="3.220688"/>
+</kw>
+<status status="FAIL" start="2025-02-11T10:09:26.800083" elapsed="112.133284"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Q20.1" id="s1" pass="0" fail="1" skip="0">Q20.1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

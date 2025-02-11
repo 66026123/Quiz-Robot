@@ -1,0 +1,20 @@
+1739243320505	geckodriver	INFO	Listening on 127.0.0.1:61152
+1739243323589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61153" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TOPVIE~1\\AppData\\Local\\Temp\\rust_mozprofileCNfchk"
+1739243324031	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Topviewpoint\\AppData\\Local\\Temp\\rust_mozprofileCNfchk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61153/devtools/browser/c889f692-98d7-451f-833f-d75cb17316b2
+WebDriver BiDi listening on ws://localhost:61153
+1739243326399	Marionette	INFO	Listening on port 61159
+1739243326733	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  InvalidSignatureError: Invalid content signature (main/query-stripping)
+console.error: services.settings: 
+  main/query-stripping local data was corrupted
+console.warn: services.settings: main/query-stripping Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/query-stripping Signature failed again InvalidSignatureError: Invalid content signature (main/query-stripping)
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.js:806:3
+
+1739243355876	Marionette	INFO	Stopped listening on port 61159
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
