@@ -3,7 +3,7 @@ Library           SeleniumLibrary
 Suite Setup       Open Browser       http://automationexercise.com
 Suite Teardown    Close Browser
 *** Variables ***
-${SEARCH_TERM}         Dress
+${SEARCH_TERM}        Dress
 ${USERNAME}           testuser@example.com
 ${PASSWORD}           password123
 
@@ -26,18 +26,18 @@ Add Products To Cart
     Click Element    /html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/a
 
 Verify Products In Cart
-    Click Element    xpath=//a[contains(text(),'Cart')]
+    Click Element   //*[@id="header"]/div/div/div/div[2]/div/ul/li[3]
     Wait Until Page Contains    ${SEARCH_TERM}
 
 Login To Account
-    Click Element    xpath=//a[contains(text(),'Signup / Login')]
-    Input Text    xpath=//input[@data-qa='login-email']    ${USERNAME}
-    Input Text    xpath=//input[@data-qa='login-password']    ${PASSWORD}
-    Click Button    xpath=//button[@data-qa='login-button']
+    Click Element   //*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a
+    Input Text      //*[@id="form"]/div/div/div[1]/div/form/input[2]    ${USERNAME}
+    Input Text      //*[@id="form"]/div/div/div[1]/div/form/input[3]    ${PASSWORD}
+    Click Button    //*[@id="form"]/div/div/div[1]/div/form/button
     Wait Until Page Contains    Logged in as
 
 Verify Products In Cart After Login
-    Click Element    xpath=//a[contains(text(),'Cart')]
+    Click Element    //*[@id="header"]/div/div/div/div[2]/div/ul/li[3]
     Wait Until Page Contains    ${SEARCH_TERM}
 
 
@@ -54,4 +54,3 @@ Search Products and Verify Cart After Login
     Login To Account
     Verify Products In Cart After Login
     Close Browser
-
